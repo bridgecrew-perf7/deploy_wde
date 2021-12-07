@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 if [[ "$#" -ne 2 ]]; then
 echo "Para ejecutar el script"
 echo "se deben para la carpeta"
