@@ -20,7 +20,7 @@
 
 ### Host Origen
 
-- pwpicpacapp1 10.75.161.7
+desde donde se ejecute el script de distribucion_v3.sh
 
 ### Destino_Pacheco
 
