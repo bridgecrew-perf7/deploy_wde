@@ -15,24 +15,3 @@ echo -e $dates "# ^^^^^^^^^^          |||  |||          |--|--|--|--|--|    |==|
 echo -e $dates "#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^#"  
 echo -e $dates "#############################################################################"  
 }
-function LOG_FOOTER_UNZIP () {
-    echo "$1" # arguments are accessible through $1, $2,...
-}
-function LOG_FOOTER_BACKUP_IWDE()
-{
- echo -e $dates "#                                                                           #" 
- echo -e $dates "# INF # Proceso de Backup Finalizado                                        #" 
- echo -e $dates "#                                                                           #" 
-}
-function LOG_FOOTER_BACKUP_ZIP
-{
-    echo -e $dates "#############################################################################"
-}
-function LOG_FOOTER_CHECK()
-{
-  echo -e $dates "#############################################################################"
- }
-function LOG_FOOTER_MOVE()
-{
-echo -e $dates "#############################################################################"
-}
