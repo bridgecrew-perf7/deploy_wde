@@ -7,18 +7,15 @@ echo "y el archivo .zip como"
 echo "segundo paramentro"
 exit 1
 fi
-# $1 carpeta de la web.
-# $2 nombre del archivo zi
 Path_www=/var/www/html
-Path_opt=/opt/genesys
+Path_opt=/opt/genesys/deploy_wde
 Path_zip=$Path_opt/zip
-Path_log=./
-#/var/log/genesys
+Path_log=/var/log/genesys
 Path_Hist=$Path_opt/Historico
 Folder_Destino=$1 # InteractionWorkspace o InteractionWorkspace_Prepro
 File_zip=$Path_zip/$2
 Fecha=$(date +'%Y%m%d')
-dates=$(date +'%Y-%m-%d--%H%M%S')
+dates=$(date +'%Y-%m-%d--%H:%M:%S')
 UPAC=x001357
 UEST=x001356
 UHOR=x002492
