@@ -17,10 +17,7 @@ Path_Hist=$Path_opt/Historico
 Folder_Destino=$1 # InteractionWorkspace o InteractionWorkspace_Prepro
 File_zip=$Path_zip/$2
 Fecha=$(date +'%Y%m%d')
-#dates=$(date +'%Y-%m-%d--%H%M%S')
-UPAC=x001357
-UEST=x001356
-UHOR=x002492
+dates=$(date +'%Y-%m-%d--%H%M%S')
 Host=$(hostname -s)
 perm=775
 #backup de lo actua
@@ -74,15 +71,15 @@ if [[ "$Valida_Bkp" == 1 && "$Valida_InteractionWorkspace" == 1 ]]; then
        printf  dates "Finalizo la descompresion...." >> $log
         case $Host in
         *pac*)
-        user=$UPAC
+        user=x001357
         msg_site='Implementado en pacheco'
         ;;
         *est*)
-        user=$UEST
+        user=x001356
         msg_site='Implementado en estomba'
         ;;
         *gir*)
-        user=$UHOR
+        user=x002492
         msg_site='Implementado en hornos'
         ;;
         *)      
